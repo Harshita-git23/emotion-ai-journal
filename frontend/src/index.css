@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.color-empty { fill:#ebedf0; }
+.color-happy { fill:#A7F3D0; }
+.color-sad { fill:#93C5FD; }
+.color-anxious { fill:#FDBA74; }
+.color-angry { fill:#FCA5A5; }
+.color-neutral { fill:#E5E7EB; }
+.react-calendar-heatmap rect {
+ rx: 4px;
+}
