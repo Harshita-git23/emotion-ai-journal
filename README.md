@@ -213,20 +213,22 @@ Add screenshots inside a `demo` folder.
 
 Example structure:
 
-```
-demo/
-landing.png
-login.png
-Journal.png
-dashboard1.png
-dashboard2.png
-```
+## Demo
 
-Display screenshots in README:
+### Landing Page
+![Landing Page](demo/landing.png)
 
-```
-![Dashboard](demo/dashboard.png)
-```
+### Login Page
+![Login Page](demo/login.png)
+
+### Journal Entry
+![Journal](demo/Journal.png)
+
+### Dashboard
+![Dashboard](demo/dashboard1.png)
+
+### Dashboard Analytics
+![Dashboard Analytics](demo/dashboard2.png)
 
 ---
 
