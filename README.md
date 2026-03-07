@@ -215,9 +215,11 @@ Example structure:
 
 ```
 demo/
-dashboard.png
-emotion-analysis.png
-journal-entry.png
+landing.png
+login.png
+Journal.png
+dashboard1.png
+dashboard2.png
 ```
 
 Display screenshots in README:
