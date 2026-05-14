@@ -5,7 +5,7 @@ import Login from "./pages/Login"
 import JournalList from "./pages/JournalList"
 import NewJournal from "./pages/NewJournal"
 import Dashboard from "./pages/Dashboard"
-
+import Suggestions from "./pages/Suggestions"
 function App(){
 
  return(
@@ -23,6 +23,7 @@ function App(){
     <Route path="/new" element={<NewJournal/>} />
 
     <Route path="/dashboard" element={<Dashboard/>} />
+    <Route path="/suggestions" element={<Suggestions/>} />
 
    </Routes>
 

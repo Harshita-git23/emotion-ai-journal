@@ -1,6 +1,15 @@
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 
 function Sidebar(){
+
+ const location = useLocation()
+
+ const menuItems = [
+  { name: "Journals", path: "/journals", icon: "📔" },
+  { name: "New Entry", path: "/new", icon: "✍️" },
+  { name: "Dashboard", path: "/dashboard", icon: "📊" },
+  { name: "Personalized Suggestions", path: "/suggestions", icon: "🧠" }
+ ]
 
  return(
 
@@ -12,28 +21,24 @@ function Sidebar(){
      MindJournal
    </h1>
 
-   <nav className="flex flex-col gap-4 text-lg">
+   <nav className="flex flex-col gap-3 text-lg">
 
-     <Link
-      to="/journals"
-      className="hover:bg-white/20 p-3 rounded-lg transition"
-     >
-      Journals
-     </Link>
+     {menuItems.map((item, index) => {
 
-     <Link
-      to="/new"
-      className="hover:bg-white/20 p-3 rounded-lg transition"
-     >
-      New Entry
-     </Link>
+       const isActive = location.pathname === item.path
 
-     <Link
-      to="/dashboard"
-      className="hover:bg-white/20 p-3 rounded-lg transition"
-     >
-      Dashboard
-     </Link>
+       return (
+         <Link
+           key={index}
+           to={item.path}
+           className={`flex items-center gap-3 p-3 rounded-lg transition
+           ${isActive ? "bg-white/30 font-semibold" : "hover:bg-white/20"}`}
+         >
+           <span className="text-xl">{item.icon}</span>
+           {item.name}
+         </Link>
+       )
+     })}
 
    </nav>
 
